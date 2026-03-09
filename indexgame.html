@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickMath!</title>
+    
+    <!-- LINK KE CSS GAME -->
+    <link rel="stylesheet" href="Quickmath.css">
+    
+    
+</head>
+<body>
+    <div class="card" id="game-card">
+        <div id="start-screen">
+            <h1>QuickMath!</h1>
+            <p>
+                Jawab 10 soal secepat mungkin.<br />Waktu tiap soal hanya 10 detik!
+            </p>
+            <button onclick="startGame()">Mulai Bermain</button>
+        </div>
+
+        <div id="play-screen" class="hidden">
+            <div id="quest-number">Soal 1 / 10</div>
+            <div class="timer-bar"><div id="progress"></div></div>
+            <div class="question" id="display-question">0 + 0</div>
+            <input
+                type="number"
+                id="answer-input"
+                placeholder="?"
+                autocomplete="off"
+            />
+            <br />
+            <small>Tekan Enter untuk jawab</small>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h1>Selesai!</h1>
+            <div class="score-badge" id="final-score">Skor: 0</div>
+            <div class="result-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Soal</th>
+                            <th>Input</th>
+                            <th>Benar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-body"></tbody>
+                </table>
+            </div>
+            <button onclick="startGame()">Main Lagi</button>
+        </div>
+    </div>
+
+    <!-- LINK KE JS GAME -->
+    <script src="Quickmath.js"></script>
+</body>
+</html>
