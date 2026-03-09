@@ -263,7 +263,7 @@ body {
 .fa-file-powerpoint { color: #d24726; }
 
 .skill-card h3 {
-  color: var(--text-primary);
+  color: black;
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0;
@@ -623,3 +623,4 @@ body {
   transform: translateY(-5px);
   background: var(--accent-hover);
 }
+
